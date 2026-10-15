@@ -1,0 +1,14 @@
+CREATE TABLE Student (
+    ID NUMBER,
+    Name VARCHAR2(30)
+);
+
+CREATE OR REPLACE TRIGGER student_trigger
+BEFORE INSERT ON Student
+FOR EACH ROW
+BEGIN
+    DBMS_OUTPUT.PUT_LINE('New Student Inserted');
+END;
+/
+
+INSERT INTO Student VALUES (1, 'Asha');
