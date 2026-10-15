@@ -1,0 +1,9 @@
+INSERT INTO Student VALUES (3, 'Ravi');
+
+SAVEPOINT S1;
+
+INSERT INTO Student VALUES (4, 'Kumar');
+
+ROLLBACK TO S1;
+
+COMMIT;
