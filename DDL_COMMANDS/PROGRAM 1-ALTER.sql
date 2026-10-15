@@ -1,0 +1,10 @@
+CREATE TABLE Student (
+    ID NUMBER,
+    Name VARCHAR2(30)
+);
+
+ALTER TABLE Student
+ADD Age NUMBER;
+
+ALTER TABLE Student
+DROP COLUMN Age;
