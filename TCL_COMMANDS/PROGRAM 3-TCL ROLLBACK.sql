@@ -1,0 +1,3 @@
+INSERT INTO Student VALUES (2, 'Priya');
+
+ROLLBACK;
